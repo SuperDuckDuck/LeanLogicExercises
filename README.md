@@ -1,6 +1,4 @@
-# LogicExercisesInCoq
-
-- scroll down for exercises in FOL (first order logic)  
+# LogicExercisesInLean
 
 ## Propositional Logic
 
@@ -42,7 +40,7 @@ assume H1:(a → (b ∧ c)),
   show b, from and.elim_left A
 ```
 
-**Exercise 5: (a ∧ (a → ¬a)) → (a ∧ ¬a) **
+**Exercise 5: (a ∧ (a → ¬a)) → (a ∧ ¬a)**
 ```lean
 theorem Ex005(a b : Prop): (a ∧ (a → ¬a)) → (a ∧ ¬a) :=
 assume H:(a ∧ (a → ¬a)),
