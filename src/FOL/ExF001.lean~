@@ -1,9 +1,0 @@
-
-theorem ExF001(P Q : Prop → Prop)(a : Prop ): P a → Q a → ∃x, P x ∧ Q x :=
-
-assume H1:P a,
-  assume H2:Q a,
-  have A:P a ∧ Q a, from and.intro H1 H2,
-  show ∃x, P x ∧ Q x, from exists.intro a A
-
-
